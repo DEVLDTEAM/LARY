@@ -13,7 +13,7 @@ from ..helpers.functions import catalive, check_data_base_heal_th, get_readable_
 from ..helpers.utils import reply_id
 from . import mention
 
-Config.ALIVE_PIC or "https://telegra.ph/file/636465f8d4ffc5ee93bb2.jpg"
+CAT_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/636465f8d4ffc5ee93bb2.jpg"
 CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "LaRy 𝘽𝙊𝙏"
 EMOJI = Config.CUSTOM_ALIVE_EMOJI or "  ༻ "
 
@@ -36,7 +36,7 @@ async def amireallyalive(event):
     reply_to_id = await reply_id(event)
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
-    if Config.ALIVE_PIC:
+    if CAT_IMG:
         cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         cat_caption += f"**{EMOJI} Database :** `{check_sgnirts}`\n"
         cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
