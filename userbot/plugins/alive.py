@@ -13,8 +13,9 @@ from ..helpers.functions import catalive, check_data_base_heal_th, get_readable_
 from ..helpers.utils import reply_id
 from . import mention
 
-CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "✮ MY BOT IS RUNNING SUCCESSFULLY ✮"
-EMOJI = Config.CUSTOM_ALIVE_EMOJI or "  ✥ "
+CAT_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/636465f8d4ffc5ee93bb2.jpg"
+CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "LaRy 𝘽𝙊𝙏"
+EMOJI = Config.CUSTOM_ALIVE_EMOJI or "  ༻ "
 
 plugin_category = "utils"
 
