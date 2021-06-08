@@ -6,8 +6,8 @@ from .Config import Config
 from .core import logger
 from .core.session import catub
 
-__version__ = "3.0.0"
-__license__ = "GNU Affero General Public License v3.0"
+__version__ = "1.0.0"
+__license__ = "GNU Affero General Public License v1.0"
 __author__ = "CatUserBot <https://github.com/sandy1709/catuserbot>"
 __copyright__ = "CatUserBot Copyright (C) 2020 - 2021  " + __author__
 
@@ -19,7 +19,7 @@ StartTime = time.time()
 catversion = "1.0.0"
 
 if Config.UPSTREAM_REPO == "goodcat":
-    UPSTREAM_REPO_URL = "https://github.com/sandy1709/catuserbot"
+    UPSTREAM_REPO_URL = "https://github.com/THHBOB/LARY"
 elif Config.UPSTREAM_REPO == "badcat":
     UPSTREAM_REPO_URL = "https://github.com/Jisan09/catuserbot"
 else:
