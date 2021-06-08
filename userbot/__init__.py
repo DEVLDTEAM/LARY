@@ -16,7 +16,7 @@ catub.tgbot.version = __version__
 bot = catub
 
 StartTime = time.time()
-catversion = "3.0.0"
+catversion = "1.0.0"
 
 if Config.UPSTREAM_REPO == "goodcat":
     UPSTREAM_REPO_URL = "https://github.com/sandy1709/catuserbot"
