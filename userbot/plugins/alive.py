@@ -13,7 +13,7 @@ from ..helpers.functions import catalive, check_data_base_heal_th, get_readable_
 from ..helpers.utils import reply_id
 from . import mention
 
-CAT_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/636465f8d4ffc5ee93bb2.jpg"
+Config.ALIVE_PIC or "https://telegra.ph/file/636465f8d4ffc5ee93bb2.jpg"
 CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "LaRy 𝘽𝙊𝙏"
 EMOJI = Config.CUSTOM_ALIVE_EMOJI or "  ༻ "
 
@@ -21,8 +21,8 @@ plugin_category = "utils"
 
 
 @catub.cat_cmd(
-    pattern="alive$",
-    command=("alive", plugin_category),
+    pattern="فحص$",
+    command=("فحص", plugin_category),
     info={
         "header": "To check bot's alive status",
         "options": "To show media in this cmd you need to set ALIVE_PIC with media link, get this by replying the media by .tgm",
